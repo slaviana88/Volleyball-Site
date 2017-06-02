@@ -1,0 +1,33 @@
+.header {
+    padding-top: 4.375rem;
+    padding-bottom: 1.25rem;
+    background: #010206 url("../images/bg-header_wrapper.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.header:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.header ul.navigation{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	float:right;
+}
+.header ul.navigation li {
+	float:left;
+	padding:50px;
+	font-weight: bold;
+	font-size: 16px;
+  color: white;
+}
+.header ul.navigation li.selected {
+	border:0;
+	border-bottom: 2px solid grey;
+	color:white;
+	border-style: inset;
+}

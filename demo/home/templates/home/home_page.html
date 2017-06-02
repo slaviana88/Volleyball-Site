@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load staticfiles wagtailimages_tags wagtailcore_tags %}
+{% block content %}
+<div class="header">
+  <h1>LLqlqlqlqlq</h1>
+  <ul class="navigation">
+    <a href=""><li>История</li></a>
+    <a href=""><li>Видове позиции</li></a>
+    <a href=""><li>Известни български волейболисти</li></a>
+    <a href=""><li>JSON Web Algorithm</li></a>
+  </ul>
+</div>
+    <p>{{ page.body|richtext }} </p>
+    </br>
+      <h2>Видове позиции </h2>
+      {% for relation in page.players.all %}
+      <h3> {{ relation.position.title }}</h3>
+      </br>
+      Описание: {{ relation.position.description }}
+    {% endfor %}
+{% endblock %}
